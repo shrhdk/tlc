@@ -53,7 +53,7 @@ $ cat NASA_access_log_Aug95 | tlc -f 'dd/mmm/yyyy:HH:MM:SS' -p '48h'
 1995-08-30 00:00:00 +0000 UTC   170765
 ```
 
-Count lines per 10 days. (with grep)
+Count lines per 5 days. (with grep)
 
 ```sh
 $ cat NASA_access_log_Aug95 | grep '^piweba1y\.prodigy\.com' | tlc -f 'dd/mmm/yyyy:HH:MM:SS' -p '120h'
